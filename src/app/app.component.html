@@ -1,0 +1,31 @@
+<!-- <table>
+  <thead>
+    <tr>
+      <th *ngFor="let column of displayedColumns">{{ column | titlecase }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of rows.controls; let rowIndex = index" [formGroup]="row">
+      <td>{{ row.get('name').value }}</td>
+      <td>{{ row.get('age').value }}</td>
+      <td>{{ row.get('email').value }}</td>
+      <td>
+        <input formControlName="available" *ngIf="!row.get('showWROButtons').value">
+      </td>
+      <td>
+        <ng-container *ngIf="row.get('showWROButtons').value">
+          <button (click)="addWRO(rowIndex)">Add WRO</button>
+        </ng-container>
+        <ng-container *ngIf="!row.get('showWROButtons').value">
+          <div *ngFor="let field of row.get('inputFields').controls; let fieldIndex = index" [formGroupName]="fieldIndex" class="inline-elements">
+            <input formControlName="inputField1" placeholder="Enter value 1">
+            <input formControlName="inputField2" placeholder="Enter value 2">
+            <button (click)="addField(rowIndex)">+</button>
+            <button (click)="removeField(row, fieldIndex)">-</button>
+          </div>
+        </ng-container>
+        <span>{{ row.get('wro').value }}</span>
+      </td>
+    </tr>
+  </tbody>
+</table> -->

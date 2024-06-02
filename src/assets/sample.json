@@ -1,0 +1,203 @@
+[
+  {
+    "inventoryId": "SB5307",
+    "sku": "5307",
+    "name": "ALPHARET OVERNIGHT CREAM 30 ML",
+    "qtySending": [
+      { "qty": 5 },
+      { "qty": 7 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L12", "expirationDate": "2024-06-30" },
+      { "lotNumber": "L1", "expirationDate": "2050-06-30" }
+    ]
+  },
+  {
+    "inventoryId": "SB5327",
+    "sku": "5327",
+    "name": "INTENSIVE ALPHARET OVERNIGHT CREAM 50 ML",
+    "qtySending": [
+      { "qty": 3 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L2", "expirationDate": "2024-07-15" },
+      { "lotNumber": "123", "expirationDate": "2050-07-15" }
+    ]
+  },
+  {
+    "inventoryId": "SB5128",
+    "sku": "5128",
+    "name": "EYEMAX ALPHARET OVERNIGHT CREAM 15 ML",
+    "qtySending": [
+      { "qty": 7 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L3", "expirationDate": "2024-08-01" }
+    ]
+  },
+  {
+    "inventoryId": "SB5404",
+    "sku": "5404",
+    "name": "SUNBETTER TONE SMART SPF 75 SUNSCREEN LOTION 50 ML",
+    "qtySending": [
+      { "qty": 10 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L4", "expirationDate": "2024-08-15" }
+    ]
+  },
+  {
+    "inventoryId": "SB5113",
+    "sku": "5113",
+    "name": "SOLO HYDRATING DEFENSE 50ML",
+    "qtySending": [
+      { "qty": 2 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L5", "expirationDate": "2024-09-01" }
+    ]
+  },
+  {
+    "inventoryId": "SB5190",
+    "sku": "5100",
+    "name": "HYDRATION BOOSTING CREAM 50 ML",
+    "qtySending": [
+      { "qty": 4 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L6", "expirationDate": "2024-09-15" }
+    ]
+  },
+  {
+    "inventoryId": "SB5500",
+    "sku": "5500",
+    "name": "SAMPLE ITEM",
+    "qtySending": [
+      { "qty": 6 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L7", "expirationDate": "2024-10-01" }
+    ]
+  },
+  {
+    "inventoryId": "SB5600",
+    "sku": "5600",
+    "name": "ANOTHER SAMPLE",
+    "qtySending": [
+      { "qty": 8 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L8", "expirationDate": "2024-10-15" }
+    ]
+  },
+  {
+    "inventoryId": "SB5700",
+    "sku": "5700",
+    "name": "YET ANOTHER SAMPLE",
+    "qtySending": [
+      { "qty": 1 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L9", "expirationDate": "2024-11-01" }
+    ]
+  },
+  {
+    "inventoryId": "SB5800",
+    "sku": "5800",
+    "name": "AND ANOTHER SAMPLE",
+    "qtySending": [
+      { "qty": 12 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L10", "expirationDate": "2024-11-15" }
+    ]
+  },
+  {
+    "inventoryId": "SB5900",
+    "sku": "5900",
+    "name": "FINAL SAMPLE",
+    "qtySending": [
+      { "qty": 15 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L11", "expirationDate": "2024-12-01" }
+    ]
+  },
+  {
+    "inventoryId": "SB6000",
+    "sku": "6000",
+    "name": "SOME SAMPLE",
+    "qtySending": [
+      { "qty": 20 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L12", "expirationDate": "2024-12-15" }
+    ]
+  },
+  {
+    "inventoryId": "SB6100",
+    "sku": "6100",
+    "name": "ANOTHER SAMPLE AGAIN",
+    "qtySending": [
+      { "qty": 3 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L13", "expirationDate": "2025-01-01" }
+    ]
+  },
+  {
+    "inventoryId": "SB6200",
+    "sku": "6200",
+    "name": "MORE SAMPLES",
+    "qtySending": [
+      { "qty": 6 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L14", "expirationDate": "2025-01-15" }
+    ]
+  },
+  {
+    "inventoryId": "SB6300",
+    "sku": "6300",
+    "name": "SAMPLES GALORE",
+    "qtySending": [
+      { "qty": 9 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L15", "expirationDate": "2025-02-01" }
+    ]
+  },
+  {
+    "inventoryId": "SB6400",
+    "sku": "6400",
+    "name": "LOTS OF SAMPLES",
+    "qtySending": [
+      { "qty": 2 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L16", "expirationDate": "2025-02-15" }
+    ]
+  },
+  {
+    "inventoryId": "SB6500",
+    "sku": "6500",
+    "name": "TOO MANY SAMPLES",
+    "qtySending": [
+      { "qty": 5 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L17", "expirationDate": "2025-03-01" }
+    ]
+  },
+  {
+    "inventoryId": "SB6600",
+    "sku": "6600",
+    "name": "SAMPLE OVERLOAD",
+    "qtySending": [
+      { "qty": 8 }
+    ],
+    "lotExpirationFields": [
+      { "lotNumber": "L18", "expirationDate": "2025-03-15" }
+    ]
+  }
+]

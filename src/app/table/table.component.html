@@ -1,0 +1,70 @@
+<div>
+  <div class="d-flex">
+    <div>
+      <h1>1</h1>
+    </div>
+    <div>
+      <h2>What items are you sending?</h2>
+    </div>
+  </div>
+  <div>
+    <label>Select Brand / Vendor (required)</label>
+    <select [(ngModel)]="selectedBrand">
+      <option *ngFor="let brand of brands" [value]="brand">{{ brand }}</option>
+    </select>
+  </div>
+  <div>
+    <input type="text" placeholder="Search by Name, MFG Item, SKU, UPC etc" [(ngModel)]="searchQuery">
+  </div>
+  <div *ngIf="true">
+    <form [formGroup]="itemsForm">
+      <table>
+        <thead>
+          <tr>
+            <th>Inventory ID</th>
+            <th>SKU - Mfg</th>
+            <th>Name</th>
+            <th>Qty Sending</th>
+            <th>Lot & Expiration</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody formArrayName="items">
+          <tr *ngFor="let item of itemsArray.controls; let i = index" [formGroupName]="i">
+            <td>{{ item.get('inventoryId')?.value }}</td>
+            <td>{{ item.get('sku')?.value }}</td>
+            <td>{{ item.get('name')?.value }}</td>
+            <td>
+              <div formArrayName="qtySending">
+                <ng-container *ngIf="getQtySendingFields(i).length > 0; else placeholder">
+                  <div *ngFor="let qty of getQtySendingFields(i).controls; let k = index" [formGroupName]="k">
+                    <input type="number" formControlName="qty" placeholder="Qty">
+                  </div>
+                </ng-container>
+                <ng-template #placeholder>
+                  <input type="text" disabled placeholder="-">
+                </ng-template>
+              </div>
+            </td>
+            <td>
+              <div formArrayName="lotExpirationFields">
+                <div *ngFor="let lot of getLotExpirationFields(i).controls; let j = index" [formGroupName]="j">
+                  <input type="text" formControlName="lotNumber" placeholder="Lot #">
+                  <input type="date" formControlName="expirationDate">
+                  <button type="button" (click)="addLot(i)">+</button>
+                  <button type="button" (click)="removeLot(i, j)">-</button>
+                </div>
+              </div>
+              <a *ngIf="getLotExpirationFields(i).length === 0" (click)="addLot(i)">Add Lot #</a>
+            </td>
+            <td>
+              <button type="button" (click)="removeItem(i)">🗑️</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button type="button" (click)="save()">Save & Continue</button>
+      <button type="button" (click)="cancel()">Cancel</button>
+    </form>
+  </div>
+</div>
