@@ -25,3 +25,32 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+<div class="container">
+  <mat-form-field appearance="outline">
+    <mat-label>Search for your items</mat-label>
+    <input matInput [(ngModel)]="searchQuery" placeholder="Enter item code" (keyup.enter)="searchItems()">
+    <button mat-icon-button matSuffix (click)="searchItems()">
+      <mat-icon>search</mat-icon>
+    </button>
+  </mat-form-field>
+
+  <div *ngIf="filteredItems.length > 0">
+    <mat-selection-list>
+      <mat-list-option *ngFor="let item of filteredItems" [value]="item">
+        <mat-checkbox [(ngModel)]="item.selected">{{ item.name }}</mat-checkbox>
+      </mat-list-option>
+    </mat-selection-list>
+  </div>
+</div>
+
+  filteredItems: any = [];
+
+  searchItems() {
+    console.log(this.searchQuery);
+    this.filteredItems = this.items.filter(item => item.name.includes(this.searchQuery));
+  }
+
+  toggleSelection(item: any) {
+    item.selected = !item.selected;
+  }
